@@ -15,9 +15,9 @@ class App extends Component {
   componentDidMount() {
     fetch(api_url).then(res => {
       return res.json();
-    }).then(result => {
-      console.log(result);
-      this.setState({ data: result})
+    }).then(data => {
+      console.log(data);
+      this.setState({ data: data})
     });
   }
 

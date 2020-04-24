@@ -6,6 +6,7 @@
     "prop-types": "^15.7.2"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.11",
     "bootstrap": "^4.4.1",
     "bootstrap-icons": "^1.0.0-alpha",
     "react": "^16.12.0",
