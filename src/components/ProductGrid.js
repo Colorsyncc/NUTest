@@ -5,7 +5,7 @@ import '../styles/product.css';
 //Components
 import Product from './Product';
 
-const ProductGrid = ({ data }) => {
+const ProductGrid = ({ data, increment, subtract, counter }) => {
     return(
         <div className="container">
             <Grid container justify="flex-start" spacing={ 3 }>
@@ -13,6 +13,9 @@ const ProductGrid = ({ data }) => {
                     const { id, photo, name, price } = res;
                     return(
                     <Product 
+                    counter={counter}
+                    increment={increment}
+                    subtract={subtract}
                     photo={photo}
                     name={name}
                     price={price}
