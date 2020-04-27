@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import { Paper } from '@material-ui/core';
 //Components
+import AddToCart from './AddToCart';
 //Assets
 import '../styles/product.css';
 
@@ -18,6 +19,7 @@ const Product = ({ photo, name, price, increment, subtract, counter }) => {
                 <input type="text" size="1" value={counter} readOnly/>
                 <button className="btn btn-default" onClick={e=> subtract(e)}>-</button>
             </div>
+            <AddToCart/>
             </div>
             </Paper>
         </Grid>

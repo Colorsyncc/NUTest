@@ -12,15 +12,19 @@ class MainComponent extends Component {
     }
 
     handleIncrement = e => {
-            if (e.target) {
-                this.setState({
-                    count: this.state.count +1
-                })
-            }
+        if (e.target) {
+            this.setState({
+                count: this.state.count +1
+            })
+        }
     }
 
     handleSubtract = e => {
-        console.log('clickkkkk');
+        if (this.state.count > 0) {
+            this.setState({
+                count: this.state.count -1
+            })
+        }
     }
 
     render() {
@@ -32,8 +36,8 @@ class MainComponent extends Component {
                 <ProductGrid 
                     counter={count}
                     data={data}
-                    increment={this.handleIncrement}
-                    subtract={this.handleSubtract}
+                    increment={e => this.handleIncrement(e)}
+                    subtract={e=> this.handleSubtract(e)}
                 />
             </div>
         )

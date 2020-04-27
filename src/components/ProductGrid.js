@@ -13,13 +13,13 @@ const ProductGrid = ({ data, increment, subtract, counter }) => {
                     const { id, photo, name, price } = res;
                     return(
                     <Product 
-                    counter={counter}
-                    increment={increment}
-                    subtract={subtract}
-                    photo={photo}
-                    name={name}
-                    price={price}
-                    key={id}
+                        counter={counter}
+                        increment={increment}
+                        subtract={subtract}
+                        photo={photo}
+                        name={name}
+                        price={price}
+                        key={id}
                     />
                 );
             })
