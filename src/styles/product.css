@@ -20,3 +20,7 @@ h4 {
     width: 100%;
     padding: 90px;
 }
+
+input {
+    text-align: center;
+}

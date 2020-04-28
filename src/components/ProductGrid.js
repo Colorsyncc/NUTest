@@ -5,17 +5,15 @@ import '../styles/product.css';
 //Components
 import Product from './Product';
 
-const ProductGrid = ({ data, increment, subtract, counter }) => {
+const ProductGrid = ({ data }) => {
     return(
         <div className="container">
             <Grid container justify="flex-start" spacing={ 3 }>
                 { data.map(res => {
                     const { id, photo, name, price } = res;
                     return(
-                    <Product 
-                        counter={counter}
-                        increment={increment}
-                        subtract={subtract}
+                    <Product
+                        data={data}
                         photo={photo}
                         name={name}
                         price={price}

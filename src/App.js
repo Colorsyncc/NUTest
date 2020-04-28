@@ -9,7 +9,7 @@ import '../src/App.css'
 class App extends Component {
   constructor() {
     super();
-    this.state = {data: []}
+    this.state = { data: [] }
   }
 
   componentDidMount() {
