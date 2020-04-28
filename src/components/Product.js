@@ -24,14 +24,13 @@ class Product extends Component {
         }
 
         if (e.target) {
-           return data;
-        }
-        console.log(data);
-        
+           console.log(data);
+           
     }
+}
     
     handleIncrement = e => {
-        const total = this.state.count +1 * this.state.dataPrice
+        const total = parseFloat(this.state.count +1).toFixed(1) * parseFloat(this.state.dataPrice).toFixed(1)
         if (e.target) {
             this.setState({
                 count: this.state.count +1,
@@ -69,7 +68,7 @@ class Product extends Component {
                     <input type="text" size="1" value={this.state.count} readOnly/>
                     <button className="btn btn-default" onClick={e => this.handleIncrement(e)}>+</button>
                 </div>
-                <AddToCart handleClick={e => this.addToCart(e)}/>
+                <AddToCart onClick={e => this.addToCart(e)}/>
                 </Paper>
             </Grid>
             )
