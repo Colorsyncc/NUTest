@@ -1,10 +1,9 @@
 import React from 'react';
 
-const AddToCart = ({ handleClick }) => {
+const AddToCart = ({ handleAddCart }) => {
     return(
         <div className="containerButton">
-            <button className="btn btn-success btn-sm" onClick={handleClick}>Agregar al carro</button>
-            
+            <button className="btn btn-success btn-sm" onClick={handleAddCart}>Agregar al carro</button>
         </div>
     )
 }
