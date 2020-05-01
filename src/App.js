@@ -4,7 +4,7 @@ import api_url from './constants/api_url';
 //Components
 import MainComponent from './components/index';
 
-import '../src/App.css'
+import '../src/App.css';
 
 class App extends Component {
   constructor() {

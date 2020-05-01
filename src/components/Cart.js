@@ -3,13 +3,11 @@ import React from 'react';
 //Assets
 import '../styles/cart.css';
 
-const Cart = ({ subTotal, totalProducts }) => {
+const Cart = () => {
     return( 
-        <div className="containerCart">
-            <span className="text">Numero de productos: {totalProducts}</span>
-            <br></br>
-            <span className="text">Sub Total: {subTotal}</span>
-        </div>
+                    <div className="containerCart">
+                        <span className="text">Total de Productos: </span>
+                    </div>
     )
 }
 
