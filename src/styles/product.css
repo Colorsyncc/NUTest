@@ -1,26 +1,30 @@
-.paperMain img{
-    width: 100%;
-    height: 15em;
-    padding: 2px;
-
-}
-
-.paperMain {
-    background-color: red;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
 h4 {
     font-weight: 900;
     color: rgb(87, 87, 87);
 }
 
-.container {
-    width: 100%;
-    padding: 90px;
-}
-
 input {
     text-align: center;
+}
+
+.containerProduct {
+    display: inline-block;
+    margin:0px;
+}
+
+.main-product {
+    margin-top:70px;
+    margin-left: 50px;
+}
+
+.product-list li{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    list-style: none;
+}
+
+.product-list img {
+    height: 200px;
+    width: 200px;
 }
